@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+body {
+  height: 100vh;
+  background-color: #FCE6A8;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 5px;
+}
+
+.cabecalho {
+  background-color: #8FBCB3;
+  padding: 10px;
+}
+
+.principal {
+  background-color: #8FBCB3;
+  padding: 10px 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  .principal {
+    padding: 10px 60px;
+  }
+}
+
+.outraCoisa {
+  background-color: yellow;
+}
+
+.card-exercicio {
+  background-color: #DFE6ED;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+}
+.card-exercicio > * {
+  padding: 10px;
+}
+.card-exercicio__entrada {
+  width: 0;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.card-exercicio__entrada > * {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px gray solid;
+  text-align: center;
+}
+.card-exercicio__entrada input::-moz-placeholder {
+  font-size: 15px;
+  padding: 10px;
+}
+.card-exercicio__entrada input:-ms-input-placeholder {
+  font-size: 15px;
+  padding: 10px;
+}
+.card-exercicio__entrada input::placeholder {
+  font-size: 15px;
+  padding: 10px;
+}
+.card-exercicio__saida {
+  background-color: #C3CFD9;
+  width: 0;
+  flex: 1 1 0;
+  border: solid #788895 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-exercicio__saida > span:nth-child(1) {
+  font-size: 15px;
+}
+.card-exercicio__saida #resultado_ex01 {
+  font-size: 60px;
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
